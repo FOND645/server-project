@@ -1,26 +1,18 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": [
-    "src"
-  ]
+    "compilerOptions": {
+        "target": "ES6", // Целевая версия ECMAScript (в данном случае ES6)
+        "module": "commonjs", // Тип модулей (commonjs для Node.js)
+        "strict": true, // Строгий режим
+        "baseUrl": ".", // Базовый путь для относительных модулей
+        "noUnusedLocals": false,
+        "outDir": "./dist", // Директория для компилированных файлов
+        "esModuleInterop": true, // Разрешить импорт модулей в стиле ES6
+        "forceConsistentCasingInFileNames": true, // Проверка регистра имен файлов
+        "resolveJsonModule": true, // Разрешение импорта JSON как модулей
+        "isolatedModules": true, // Указывает, что каждый файл является отдельным модулем
+        // Настройка для React
+        "jsx": "react", // Тип JSX (React)
+        "skipLibCheck": true // Пропуск проверки библиотек (для ускорения сборки)
+    },
+    "include": ["src"]
 }

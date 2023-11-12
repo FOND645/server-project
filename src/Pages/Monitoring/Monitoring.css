@@ -1,0 +1,47 @@
+.monitoring-container {
+    width: 100%;
+}
+
+.monitors-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.monitor-graphic {
+    width: 100%;
+    z-index: 2;
+    border-radius: 20px 20px;
+}
+
+.monitor-container {
+    width: 45%;
+    min-height: min-content;
+    border: 2px;
+    z-index: 1;
+    border-style: dashed;
+    border-color: lightslategrey;
+    border-radius: 20px 20px;
+}
+
+.add-monitor {
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-monitor-icon {
+    border: none;
+    padding: 6vw;
+    font-size: 8vw;
+}
+
+@media screen and (max-width: 768px) {
+    .monitor-container {
+        width: 80%;
+    }
+}
